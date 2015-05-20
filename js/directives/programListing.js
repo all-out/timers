@@ -4,6 +4,6 @@ app.directive('programListing', function() {
 		scope: {
 			listing: '=',
 		},
-		templateUrl: 'https://dl.dropboxusercontent.com/s/pdsnrbewnvnnfnn/programListing.html' // js/directives/programListing.html
+		templateUrl: 'js/directives/programListing.html'
 	};
 });

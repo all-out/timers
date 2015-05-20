@@ -1,0 +1,37 @@
+<div class="row">
+            
+  <div class="col-md-6">
+    <h1 class="series">{{ listing.name }}</h1>
+  </div>  
+
+  <div class="col-md-5">
+    <ul class="list-group">
+
+      <li class="list-group-item">
+        <listlabel>Eve Time:</listlabel>
+        {{ listing.datetime | date:'yyyy.MM.dd HH:mm':'UTC' }}
+      </li>
+
+      <li class="list-group-item">
+        <listlabel>Local Time:</listlabel>
+        {{ listing.datetime | date:'HH:mm - EEEE, MMMM d, y' }}
+      </li>
+
+      <!--
+      <li class="list-group-item">
+        <listlabel>Local Time:</listlabel>
+        {{ listing.datetime | date:'HH:mm' }}
+      </li>
+      -->
+
+      <li class="list-group-item">
+        <listlabel>Time Until:</listlabel>
+        <timer end-time="listing.datetime" interval="1000">{{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds</timer>
+      </li>
+
+
+
+    </ul>
+  </div>
+
+</div>

@@ -1,70 +1,70 @@
 <!doctype html>
 <html>
-  <head>
-    <!-- bootstrap -->
-    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <head>
+        <!-- bootstrap -->
+        <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- oxygen fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+        <!-- oxygen fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
 
-    <!-- montserrat fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <!-- montserrat fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- css/main.css -->
-    <link href="css/main.css" rel="stylesheet" />
+        <!-- css/main.css -->
+        <link href="css/main.css" rel="stylesheet" />
 
-    <!-- js/vendor/angular.min.js -->
-    <script src="js/vendor/angular.min.js"></script>
+        <!-- js/vendor/angular.min.js -->
+        <script src="js/vendor/angular.min.js"></script>
 
-    <!-- js/vendor/angular-timer.min.js -->
-    <script src="js/vendor/angular-timer.min.js"></script>
+        <!-- js/vendor/angular-timer.min.js -->
+        <script src="js/vendor/angular-timer.min.js"></script>
 
-    <!-- js/vendor/moment.min.js -->
-    <script src="js/vendor/moment.min.js"></script>
+        <!-- js/vendor/moment.min.js -->
+        <script src="js/vendor/moment.min.js"></script>
 
-    <!-- js/vendor/moment-with-locales.min.js -->
-    <script src="js/vendor/moment-with-locales.min.js"></script>
+        <!-- js/vendor/moment-with-locales.min.js -->
+        <script src="js/vendor/moment-with-locales.min.js"></script>
 
-    <!-- js/vendor/humanize-duration.js -->
-    <script src="js/vendor/humanize-duration.js"></script>
+        <!-- js/vendor/humanize-duration.js -->
+        <script src="js/vendor/humanize-duration.js"></script>
 
-    <title>Timers</title>
-  </head>
+        <title>Timers</title>
+    </head>
 
-  <body ng-app="BoltNetworkApp">
-    <div class="header">
-      <div class="container">
+    <body ng-app="BoltNetworkApp">
+        <div class="header">
+            <div class="container">
 
-        <!-- img/logo.svg -->
-        <!-- <img src="https://dl.dropboxusercontent.com/s/bzjo6krfd390d8f/logo.svg" width="180" height="34"> -->
+                <!-- img/logo.svg -->
+                <!-- <img src="https://dl.dropboxusercontent.com/s/bzjo6krfd390d8f/logo.svg" width="180" height="34"> -->
 
-        <h1>All-Out Timers</h1>
+                <h1>All-Out Timers</h1>
 
-      </div>
-    </div>
-
-    <div class="main" ng-controller="MainController">
-      <div class="container">
-        <div class="content">
-          <div ng-repeat="clock in clocks">
-            <program-listing listing="clock"></program-listing>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="footer"></div>
-    
-    <!-- Modules -->
-    <script src="js/app.js"></script>
+        <div class="main" ng-controller="MainController">
+            <div class="container">
+                <div class="content">
+                    <div ng-repeat="clock in clocks">
+                        <program-listing listing="clock"></program-listing>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Controllers -->
-    <script src="js/controllers/MainController.js"></script>
-    
-    <!-- Directives -->
-    <script src="js/directives/programListing.js"></script>
+        <div class="footer"></div>
+        
+        <!-- Modules -->
+        <script src="js/app.js"></script>
 
-    <!-- Services -->
-    <script src="js/services/getTimers.js"></script>
-  </body>
+        <!-- Controllers -->
+        <script src="js/controllers/MainController.js"></script>
+        
+        <!-- Directives -->
+        <script src="js/directives/programListing.js"></script>
+
+        <!-- Services -->
+        <script src="js/services/getTimers.js"></script>
+    </body>
 </html>
